@@ -1,0 +1,49 @@
+{
+  "type": "record",
+  "name": "PortalBeneficiary",
+  "doc": "Portal to SABHD contract for Beneficiaries",
+  "namespace": "com.sab2i.sabhd.portal.beneficiary.avro",
+  "fields": [
+    {
+      "name": "bic",
+      "type": "string"
+    },
+    {
+      "name": "clientId",
+      "type": "string"
+    },
+    {
+      "name": "clientCode",
+      "type": "string"
+    },
+    {
+      "name": "name",
+      "type": "string",
+      "doc": "Beneficiary name"
+    },
+    {
+      "name": "iban",
+      "type": "string"
+    },
+    {
+      "name": "beneficiaryBic",
+      "type": "string"
+    },
+    {
+      "name": "country",
+      "type": ["null", "string"]
+    },
+    {
+      "name": "address",
+      "type": ["null", "string"]
+    },
+    {
+      "name": "postalCode",
+      "type": ["null", "string"]
+    },
+    {
+      "name": "city",
+      "type": ["null", "string"]
+    }
+  ]
+}
