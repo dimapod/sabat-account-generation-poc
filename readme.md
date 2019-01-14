@@ -30,14 +30,14 @@ or
     $ bin/confluent start
     
     
-Then create a topic called clicks (if not it will be created automatically with default parameters):
+Then create a topic called portal-beneficiaries (if not it will be created automatically with default parameters):
 
     # Create portal-beneficiaries topic
     $ bin/kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 \
       --partitions 1 --topic portal-beneficiaries
       
 
-Then run the producer to produce 100 clicks:
+Then run the producer to produce 10 beneficiaries
 
     $ java -cp target/uber-sabat-account-generation-poc-1.0-SNAPSHOT.jar com.sab2i.portal.beneficiaries.Main 10 http://localhost:8081
     
